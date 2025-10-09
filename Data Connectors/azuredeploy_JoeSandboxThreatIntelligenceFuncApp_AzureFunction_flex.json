@@ -302,7 +302,7 @@
         "WaitSection"
       ],
       "properties": {
-        "packageUri": "https://github.com/RamboV/JoeSandboxMSSentinel/raw/refs/heads/main/JoeSandboxThreatIntelligence/FlexConsumptionPlan/JoeSandboxConn.zip",
+        "packageUri": "https://github.com/joesecurity/ms-sentinel/raw/refs/heads/main/Data%20Connectors/JoeSandboxConn.zip",
         "remoteBuild": true
       }
     },
