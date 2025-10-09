@@ -311,7 +311,7 @@
       "apiVersion": "2022-03-01",
       "name": "[format('{0}/{1}', variables('FunctionName'), 'zipdeploy')]",
       "properties": {
-        "packageUri": "https://github.com/shubhamloginsoft/ms-sentinel/raw/refs/heads/main/JoeSandboxThreatIntelligence/PremiumPlan/JoeSandboxConn.zip"
+        "packageUri": "https://github.com/joesecurity/ms-sentinel/raw/refs/heads/main/Data%20Connectors/JoeSandboxConn.zip"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', variables('FunctionName'))]"
