@@ -125,7 +125,7 @@
 
 - Click on below button to deploy 
 
-  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2raw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FCustomConnector%2FJoeSandboxEnrichment_FunctionAppConnector%2Fazuredeploy.json)
+  [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FCustomConnector%2FJoeSandboxEnrichment_FunctionAppConnector%2Fazuredeploy.json)
   
 - It will redirect to feed Configuration page.
 
@@ -155,7 +155,7 @@
 
 - Click on below button to deploy
   
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2raw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json)
 
 - It will redirect to configuration page
 
@@ -182,7 +182,7 @@
 
 - Click on below button to deploy
   
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2raw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FJoeSandbox-Submit-File-Outlook-Attachment%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fjoesecurity%2Fms-sentinel%2Frefs%2Fheads%2Fmain%2FPlaybooks%2FJoeSandbox-Submit-File-Outlook-Attachment%2Fazuredeploy.json)
 
 - It will redirect to configuration page
 
