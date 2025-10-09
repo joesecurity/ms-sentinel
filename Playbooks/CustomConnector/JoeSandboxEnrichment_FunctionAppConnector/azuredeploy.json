@@ -157,7 +157,7 @@
                         "JoeSandboxBaseURL": "[parameters('JoeSandboxBaseURL')]",
                         "JoeSandboxAPIKey": "[parameters('JoeSandboxAPIKey')]",
                         "Resubmit": "[parameters('Resubmit')]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/shubhamloginsoft/Joe/raw/refs/heads/main/JoeSandboxEnrichment.zip"
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/joesecurity/ms-sentinel/raw/refs/heads/main/Playbooks/CustomConnector/JoeSandboxEnrichment_FunctionAppConnector/JoeSandboxEnrichment.zip"
                     }
                 }
             ]
