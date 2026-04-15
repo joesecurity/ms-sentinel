@@ -13,6 +13,7 @@ from uuid import NAMESPACE_DNS, uuid5
 JOE_SANDBOX_BASE_URL = environ.get("JoeSandboxBaseURL", "")
 IOC_LIST = ["domains", "ips", "urls", "files"]
 CONFIDENCE = {"malicious": "100", "suspicious": "75"}
+INDICATOR_LIST = []
 HASH_TYPE_LIST = [
     ("MD5", "md5"),
     ("SHA-1", "sha1"),
