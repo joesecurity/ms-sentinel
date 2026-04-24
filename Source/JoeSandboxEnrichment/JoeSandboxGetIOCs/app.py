@@ -5,13 +5,14 @@ Main Function
 # pylint: disable=logging-fstring-interpolation
 
 import logging
-from json import dumps, loads
 from traceback import format_exc
+from json import dumps, loads
 
 import azure.functions as func
 
 from ..joesandbox import JoeSandbox
-from .utils import INDICATOR_LIST, IOC_LIST, IOC_MAPPING_FUNCTION, parse_analysis_data
+from .utils import (INDICATOR_LIST, IOC_LIST, IOC_MAPPING_FUNCTION,
+                    parse_analysis_data)
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
@@ -26,7 +27,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             "Invalid Request. Missing 'analysis_id' parameter.", status_code=400
         )
     download_type = (
-        req.params.get("type") or req.get_json().get("type") or "irjsonfixed"
+            req.params.get("type") or req.get_json().get("type") or "irjsonfixed"
     )
     try:
         joe_sandbox = JoeSandbox(logging)

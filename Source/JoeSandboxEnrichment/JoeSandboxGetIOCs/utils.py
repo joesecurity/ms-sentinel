@@ -4,13 +4,14 @@ utils functions
 
 # pylint: disable=logging-fstring-interpolation
 import logging
+from ipaddress import ip_address, IPv4Address, IPv6Address
+from typing import Optional
+from uuid import uuid5, NAMESPACE_DNS
 from datetime import datetime, timedelta, timezone
-from ipaddress import IPv4Address, IPv6Address, ip_address
 from json import loads
 from os import environ
-from uuid import NAMESPACE_DNS, uuid5
 
-JOE_SANDBOX_BASE_URL = environ.get("JoeSandboxBaseURL", "")
+JOE_SANDBOX_BASE_URL= environ["JoeSandboxBaseURL"]
 IOC_LIST = ["domains", "ips", "urls", "files"]
 CONFIDENCE = {"malicious": "100", "suspicious": "75"}
 INDICATOR_LIST = []
@@ -19,7 +20,7 @@ HASH_TYPE_LIST = [
     ("SHA-1", "sha1"),
     ("SHA-256", "sha256"),
 ]
-UTC_DATE_FORMAT = "%Y-%m-%dT%H:%M:%S"
+UTC_DATE_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 VALID_UNTIL = 180
 
 
@@ -100,7 +101,7 @@ def add_file_indicators(files: list, analysis_data: dict) -> list:
     return indicators
 
 
-def check_ip(ip: str) -> str | None:
+def check_ip(ip: str) -> Optional[str]:
     """
     Determines the type of IP address using the ipaddress module.
 
@@ -176,7 +177,7 @@ def add_ip_indicators(ips: list, analysis_data: dict) -> list:
 
 def add_url_indicators(urls: list, analysis_data: dict) -> list:
     """
-    Adds URL indicators to the indicator list based on verdict filtering.
+    Adds URL indicators to the global indicator list (INDICATOR_LIST) based on verdict filtering.
 
     Parameters
     ----------
@@ -283,13 +284,16 @@ def get_utc_time() -> str:
     current_time = datetime.now(timezone.utc)
     formatted_time = (
         current_time.strftime(UTC_DATE_FORMAT)
-        + f".{current_time.microsecond // 1000:03d}Z"
     )
     return formatted_time
 
 
 def get_static_data(
-    unique_uuid: str, analysis_data: dict, pattern: str, ioc_value: str, ioc_type: str
+        unique_uuid: str,
+        analysis_data: dict,
+        pattern: str,
+        ioc_value: str,
+        ioc_type:str
 ) -> dict:
     """
     Constructs a structured dictionary representing a static threat indicator.
@@ -320,7 +324,7 @@ def get_static_data(
     ]
     expiration_date = (
         datetime.now(timezone.utc) + timedelta(days=VALID_UNTIL)
-    ).strftime(f"{UTC_DATE_FORMAT}Z")
+    ).strftime(UTC_DATE_FORMAT)
 
     data = {
         "type": "indicator",
@@ -341,7 +345,6 @@ def get_static_data(
         "valid_until": expiration_date,
     }
     return data
-
 
 IOC_MAPPING_FUNCTION = {
     "domains": add_domain_indicators,
