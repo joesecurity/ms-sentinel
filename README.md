@@ -13,7 +13,7 @@ Using the provided Logic Apps, suspicious URLs associated with Microsoft Sentine
 Joe Sandbox analysis results provide additional context such as the analysis score, detection verdict, identified threat name, extracted IOCs, and a direct link to the full Joe Sandbox analysis report. This helps security teams quickly investigate suspicious files and URLs and incorporate high-confidence threat intelligence into their existing Microsoft Sentinel workflows.
 
 <p align="center">
-  <img src="Images/overview.png" alt="Joe Sandbox Threat Intelligence Feed and Enrichment Integration for Microsoft Sentinel" width="600">
+  <img src="Images/overview.png?v=2"" alt="Joe Sandbox Threat Intelligence Feed and Enrichment Integration for Microsoft Sentinel" width="600">
 </p>
 
 ## Requirements
