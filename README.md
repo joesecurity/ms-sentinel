@@ -4,6 +4,13 @@
 
 ## Overview
 
+The **Joe Sandbox Threat Intelligence Feed and Enrichment Integration for Microsoft Sentinel** connects Joe Sandbox with Microsoft Sentinel to provide automated threat intelligence ingestion and sandbox-based enrichment of security incidents.
+
+The integration enables organizations to automatically import Indicators of Compromise (IOCs) identified by Joe Sandbox into Microsoft Sentinel Threat Intelligence and enrich security investigations with detailed Joe Sandbox analysis results.
+
+Using the provided Logic Apps, suspicious URLs associated with Microsoft Sentinel incidents can be automatically submitted to Joe Sandbox for analysis. Email attachments received through a configured Outlook mailbox can also be submitted for sandbox analysis, with the resulting verdicts used to create and enrich incidents in Microsoft Sentinel.
+
+Joe Sandbox analysis results provide additional context such as the analysis score, detection verdict, identified threat name, extracted IOCs, and a direct link to the full Joe Sandbox analysis report. This helps security teams quickly investigate suspicious files and URLs and incorporate high-confidence threat intelligence into their existing Microsoft Sentinel workflows.
 
 ## Requirements
 - Microsoft Sentinel.
