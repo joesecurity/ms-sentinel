@@ -1,6 +1,6 @@
 # JoeSandbox Threat Intelligence Feed and Enrichment Integration - Microsoft Sentinel
 
-**Latest Version:** **1.0.0** - **Release Date:** **15/09/2025**
+**Latest Version:** **1.0.1** - **Release Date:** **24/04/2026**
 
 ## Overview
 
